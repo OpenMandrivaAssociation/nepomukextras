@@ -1,0 +1,22 @@
+diff -urN nepomukextras-0.2.0/src/propertycompleter.cpp nepomukextras-0.2.0-patched/src/propertycompleter.cpp
+--- nepomukextras-0.2.0/src/propertycompleter.cpp	2011-03-08 20:08:15.000000000 +1000
++++ nepomukextras-0.2.0-patched/src/propertycompleter.cpp	2012-10-11 14:26:17.813869273 +1100
+@@ -30,7 +30,6 @@
+ #include <Soprano/BindingSet>
+ #include <Soprano/Vocabulary/RDFS>
+ #include <Soprano/Vocabulary/RDF>
+-#include <Soprano/Index/IndexFilterModel>
+ 
+ #include <kdebug.h>
+ #include <kicon.h>
+diff -urN nepomukextras-0.2.0/src/typecompletion.cpp nepomukextras-0.2.0-patched/src/typecompletion.cpp
+--- nepomukextras-0.2.0/src/typecompletion.cpp	2011-03-08 20:08:15.000000000 +1000
++++ nepomukextras-0.2.0-patched/src/typecompletion.cpp	2012-10-11 14:26:10.247869538 +1100
+@@ -34,7 +34,6 @@
+ #include <Soprano/RdfSchemaModel>
+ #include <Soprano/Vocabulary/RDF>
+ #include <Soprano/Vocabulary/RDFS>
+-#include <Soprano/Index/IndexFilterModel>
+ 
+ #include <kdebug.h>
+ #include <kicon.h>
