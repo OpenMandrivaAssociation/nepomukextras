@@ -13,6 +13,7 @@ Patch0:		nepomukextras-0.2.0-soprano.patch
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:	kolena-devel
+BuildRequires:	pkgconfig(libstreams)
 BuildRequires:	pkgconfig(shared-desktop-ontologies)
 BuildRequires:	pkgconfig(tesseract)
 Requires:	%{libnepomukextras} = %{EVRD}
