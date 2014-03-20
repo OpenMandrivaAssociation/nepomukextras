@@ -1,19 +1,21 @@
 %define nepomukextras_major 0
 %define libnepomukextras %mklibname nepomukextras %{nepomukextras_major}
 
+Summary:	Nepomuk support files
 Name:		nepomukextras
 Version:	0.2.0
-Release:	2
-Summary:	Nepomuk support files
-Group:		Graphical desktop/KDE
+Release:	3
 License:	GPLv2+
+Group:		Graphical desktop/KDE
 Url:		ftp://ftp.kde.org/pub/kde/unstable/nepomuk/
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/nepomuk/%{name}-%{version}.tar.bz2
 Patch0:		nepomukextras-0.2.0-soprano.patch
-Requires:	%{libnepomukextras} = %{version}-%{release}
+BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	kdelibs4-devel
-BuildRequires:	tesseract-devel
 BuildRequires:	kolena-devel
+BuildRequires:	pkgconfig(shared-desktop-ontologies)
+BuildRequires:	pkgconfig(tesseract)
+Requires:	%{libnepomukextras} = %{EVRD}
 
 %description
 Nepomuk support files.
@@ -25,6 +27,7 @@ Nepomuk support files.
 %package -n %{libnepomukextras}
 Summary:	Nepomuk support library
 Group:		System/Libraries
+Suggests:	%{name}
 
 %description -n %{libnepomukextras}
 Nepomuk support library.
@@ -37,7 +40,7 @@ Nepomuk support library.
 %package devel
 Summary:	Nepomuk support devel headers
 Group:		Development/KDE and Qt
-Requires:	%{libnepomukextras} = %{version}-%{release}
+Requires:	%{libnepomukextras} = %{EVRD}
 
 %description devel
 Nepomuk support devel headers.
