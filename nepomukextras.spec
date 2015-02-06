@@ -4,7 +4,7 @@
 Summary:	Nepomuk support files
 Name:		nepomukextras
 Version:	0.2.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		ftp://ftp.kde.org/pub/kde/unstable/nepomuk/
