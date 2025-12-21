@@ -10,6 +10,7 @@ Group:		Graphical desktop/KDE
 Url:		ftp://ftp.kde.org/pub/kde/unstable/nepomuk/
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/nepomuk/%{name}-%{version}.tar.bz2
 Patch0:		nepomukextras-0.2.0-soprano.patch
+BuildRequires:	make
 BuildRequires:	kdebase4-workspace-devel
 BuildRequires:	kdelibs4-devel
 BuildRequires:	kolena-devel
